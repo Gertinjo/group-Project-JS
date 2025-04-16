@@ -1,7 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f9fc;
-    background-image: url('avion.jpg'); 
+    background-color: #f4f9fc; 
   background-size: cover; 
   background-position: center center; 
   background-attachment: fixed;
@@ -9,7 +8,7 @@ body {
     margin: 0;
     padding: 40px;
   }
-  
+
   .flight-table-container {
     max-width: 1000px;
     margin: auto;
@@ -61,5 +60,39 @@ body {
       padding: 10px;
     }
   }
+
+  .price-cell {
+    text-align: center; /* Vendos butonat dhe çmimet në qendër */
+  }
   
+  .button-container {
+    display: flex; /* Flexbox për të vendosur butonat horizontalisht */
+    justify-content: center; /* Qendron në qendër */
+    gap: 10px; /* Hapësirë ndërmjet butonave */
+    margin-top: 10px; /* Hapesirë ndërmjet çmimit dhe butonave */
+  }
   
+  .pay-button {
+    background-color: #007bff; /* Ngjyra blu për butonin */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease; /* Vetëm ngjyra ndryshon kur kalon miu */
+  }
+  
+  .pay-button:hover {
+    background-color: #0056b3; /* Ngjyra blu më e errët kur kalon miu mbi butonin */
+  }
+  
+  .pay-button:active {
+    background-color: #004085; /* Ngjyra blu e errët kur shtypet butoni */
+  }
+  
+  /* Përshtatje për fluturimet */
+  .flight-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
