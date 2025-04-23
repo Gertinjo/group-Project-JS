@@ -1,18 +1,65 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f9fc; 
-  background-size: cover; 
-  background-position: center center; 
-  background-attachment: fixed;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
     color: #333;
     margin: 0;
     padding: 40px;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; 
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ff7f50; 
+}
+
   .flight-table-container {
     max-width: 1000px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #ffffff21;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -32,7 +79,7 @@ body {
   }
   
   thead {
-    background-color: #ecf9ff;
+    background-color: #ffffff21;
   }
   
   th, td {
@@ -62,37 +109,69 @@ body {
   }
 
   .price-cell {
-    text-align: center; /* Vendos butonat dhe çmimet në qendër */
+    text-align: center; 
   }
   
   .button-container {
-    display: flex; /* Flexbox për të vendosur butonat horizontalisht */
-    justify-content: center; /* Qendron në qendër */
-    gap: 10px; /* Hapësirë ndërmjet butonave */
-    margin-top: 10px; /* Hapesirë ndërmjet çmimit dhe butonave */
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 10px; 
   }
   
   .pay-button {
-    background-color: #007bff; /* Ngjyra blu për butonin */
+    background-color: #007bff; 
     color: white;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
-    transition: background-color 0.3s ease; /* Vetëm ngjyra ndryshon kur kalon miu */
+    transition: background-color 0.3s ease; 
   }
   
   .pay-button:hover {
-    background-color: #0056b3; /* Ngjyra blu më e errët kur kalon miu mbi butonin */
+    background-color: #0056b3; 
   }
   
   .pay-button:active {
-    background-color: #004085; /* Ngjyra blu e errët kur shtypet butoni */
+    background-color: #004085; 
   }
   
-  /* Përshtatje për fluturimet */
+  
   .flight-table td {
     text-align: center;
     vertical-align: middle;
   }
+
+  
+.social-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db; 
+}
+
+.social-icon i {
+  font-size: 40px; 
+}
+
